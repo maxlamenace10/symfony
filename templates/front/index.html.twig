@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello max!{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+{% for lieu in lieux %}
+    {{ include('front/_lieux.html.twig') }}
+{% endfor %}
+</div>
+
+{% endblock %}
